@@ -34,8 +34,8 @@ public class Signals {
           return Int32(SIGALRM)
         case .term:
           return Int32(SIGTERM)
-        case .user(let sig):
-          return Int32(sig)
+        case .pipe:
+          return Int32(SIGPIPE)
       }
     }
   }
